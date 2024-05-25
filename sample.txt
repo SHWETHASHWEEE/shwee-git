@@ -1,1 +1,16 @@
-my name is shwetha and i am from karnataka
+pipeline {
+    agent any
+    stages { 
+        stage('shwetha') {
+            steps {
+                sh '''
+                echo "This is my first command"
+                '''
+                sh '''
+                echo "Displaying my system uptime"
+                uptime
+                '''
+            }
+        }
+    }
+}

@@ -10,6 +10,7 @@ pipeline {
                 echo "This is my second command"
                 df -kh
                 uptime
+                date
                 '''
             }
         }    
